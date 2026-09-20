@@ -140,12 +140,6 @@ Please refer to [LICENSE.md](LICENSE.md) for more information.
 
 This is a `hobby project`, I am the only developer and I am still in school so I can not promise to update the tools regularly. It is my own decision to maintain or discontinue this project at any time.
 
-**Author: `1172005thinh`** <img src="https://avatars.githubusercontent.com/u/190686462?v=4" width="32" height="32" align="center" style="margin-left: 10px;" />
-
-- `Hung Thinh Nguyen` [GitHub](https://github.com/1172005thinh)
-- `Nguyễn Hưng Thịnh` [Facebook](https://www.facebook.com/quickcomp.hungthinhnguyen)
-- `HungThinhCloud` [Public Profile](https://hungthinhcloud.freeddns.org/about/)
-
 **Contributors: `AI Agents`**
 
 - `Claude - Anthropic` - Master reasoning

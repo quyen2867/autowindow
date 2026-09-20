@@ -1,0 +1,16 @@
+# IGNORE
+
+/.agents
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+PROMPT.md
+[Dd]esktop.ini
+*.exe
+
+# KEEP
+
+!.gitignore
+!README.md
+
+.DS_Store

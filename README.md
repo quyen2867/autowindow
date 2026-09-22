@@ -50,11 +50,6 @@ Your machine, *your own personalized Windows*, softwares and configuration in yo
 [AutoInstaller](https://github.com/1172005thinh/AutoInstaller) is a complete automation of fresh Windows installation, this tool provides:
 
 1. **A custom bootable USB drive** with [Ventoy](https://www.ventoy.net/en/index.html) supporting:
-    - A custom boot menu theme [1172005thinh](tools/Ventoy/AutoInstaller/theme/1172005thinh):
-
-        | Dark Theme Preview | Light Theme Preview |
-        | :---: | :---: |
-        | ![Dark Theme Preview](docs/preview/preview_dark43.png) | ![Light Theme Preview](docs/preview/preview_light43.png) |
 
     - A custom Ventoy configuration [ventoy.json](tools/Ventoy/AutoInstaller/ventoy.json) with pre-defined `Menu Alias`, `Menu Tips`, `Themes`, `Menu Class`, and `Auto-select` with [unattend scripts](Unattend):
         + **Menu Alias**: Replace the default image name with a custom name.

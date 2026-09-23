@@ -1,8 +1,0 @@
-# INGORE
-
-[Tt]est*.xml
-
-# KEEP
-
-!.gitignore
-!README.md

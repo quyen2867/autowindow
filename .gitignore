@@ -1,16 +1,51 @@
-# IGNORE
-
-/.agents
-AGENTS.md
-CLAUDE.md
-GEMINI.md
-PROMPT.md
-[Dd]esktop.ini
+# Ignore
 *.exe
+*.msi
+*.cfg
+*.pptx
+*.log
+AGENTS.md
+PLANS.md
+PROMPT.md
+/System Volume Information
+/Office/Office2024/Office
+/BMW
+/windows
+/source
+/temp
+/tool
+/.claude
+/.agents
+/.github
+/.vscode
 
-# KEEP
+# Will be released later
+AUTOINSTALLER.md
 
-!.gitignore
-!README.md
+# Keep
+!/.gitignore
+!/README.md
+!/LICENSE.md
+!/REPO_STRUCTURE.md
+!/USB_STRUCTURE.md
+!/icon.png
+!/icon.ico
+!/wallpaper.png
+!*.au3
+!*.ps1
+!*.ini
+!/5b512ee8a59deb284ad0a6a035ba10b1.md5
+!/aea541d7f9574587656dc5125116e548.md5
+!/Antivirus
+!/Browsers
+!/Docs
+!/Drivers
+!/Environment
+!/Socials
+!/Tools
+!/Unattend
+!/Utilities
+!/ventoy
 
-.DS_Store
+desktop.ini
+**/[Dd]esktop.ini

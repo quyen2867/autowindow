@@ -1,5 +1,5 @@
 # Version: v0.1.2
-# Author: 1172005thinh
+# Maintainer: quyen2867
 
 $files = Get-ChildItem -Path s:\ -Include install_*.au3 -Recurse | Where-Object { $_.Name -notmatch '(vcredist|vscode|mpc|discord)' }
 

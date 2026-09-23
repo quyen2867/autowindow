@@ -1,5 +1,5 @@
 # Version: v0.1.2
-# Author: 1172005thinh
+# Maintainer: quyen2867
 
 <#
 .SYNOPSIS
@@ -36,7 +36,7 @@
     (-l, --log) Stream detailed compiler stdout/stderr output to the console.
 
 .PARAMETER Version
-    (-v, --version) Display tool version and author information.
+    (-v, --version) Display tool version and maintainer information.
 
 .PARAMETER Help
     (-h, --help) Display help documentation and usage examples.
@@ -150,7 +150,7 @@ if ($RemainingArgs -and $RemainingArgs.Count -gt 0) {
 
 $TOOL_NAME    = 'compile-au2exe'
 $TOOL_VERSION = '0.1.2'
-$TOOL_AUTHOR  = '1172005thinh'
+$TOOL_MAINTAINER = 'quyen2867'
 
 # If no flags/parameters were parsed, display the help screen by default
 $hasExplicitTarget = ($All) -or ($InputPaths -and $InputPaths.Count -gt 0) -or ($Exclude -and $Exclude.Count -gt 0) -or ($Version)
@@ -165,7 +165,7 @@ if ($Version) {
     Write-Host "======================================================================" -ForegroundColor Cyan
     Write-Host " $TOOL_NAME - AutoIt3 Au2exe Compilation Tool" -ForegroundColor Cyan
     Write-Host " Version : $TOOL_VERSION" -ForegroundColor Green
-    Write-Host " Author  : $TOOL_AUTHOR" -ForegroundColor Gray
+    Write-Host " Maintainer: $TOOL_MAINTAINER" -ForegroundColor Gray
     Write-Host "======================================================================" -ForegroundColor Cyan
     exit 0
 }
@@ -189,7 +189,7 @@ OPTIONS:
     -ic, --icon <file>      Specify a custom .ico icon file (defaults to icon.ico if present).
     -d,  --dry-run          Preview compilation targets without invoking compiler.
     -l,  --log              Stream live verbose output from Au2exe compiler.
-    -v,  --version          Display tool version and author info.
+    -v,  --version          Display tool version and maintainer info.
     -h,  --help             Show this help screen.
 
 MASTER INSTALLER NOTE:

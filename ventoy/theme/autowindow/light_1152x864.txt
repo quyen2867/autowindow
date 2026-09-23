@@ -1,0 +1,53 @@
+# GRUB2 gfxmenu Linux theme
+# Designed for ratio 4:3 Light style
+
+# Global Property
+title-text: "AutoWindow | quyen2867"
+title-color: "#111827"
+desktop-color: "#F3F4F6"
+terminal-font: "Cascadia Code Regular 12"
+terminal-left: "9%"
+terminal-top: "16%"
+terminal-width: "50%"
+terminal-height: "64%"
+terminal-border: "0"
+
+# Show the boot menu
++ boot_menu {
+  left = 8%
+  top = 18%
+  width = 65%
+  height = 64%
+  item_font = "Cascadia Code Regular 20"
+  item_color = "#374151"
+  selected_item_color = "#111827"
+  icon_width = 56
+  icon_height = 56
+  item_icon_space = 16
+  item_height = 64
+  item_padding = 8
+  item_spacing = 12
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# Show a countdown message using the label component
++ label {
+  top = 11%
+  left = 24%
+  width = 43%
+  align = "left"
+  id = "__timeout__"
+  text = "Booting in %d seconds"
+  color = "#111827"
+  font = "Cascadia Code Regular 12"
+}
+
++ label {
+  top = 90%
+  left = 18%
+  width = 64%
+  align = "left"
+  text = "Enter: boot    c: console"
+  color = "#374151"
+  font = "Cascadia Code Regular 20"
+}

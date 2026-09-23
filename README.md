@@ -25,20 +25,18 @@ Your machine, your own personalized Windows, softwares and configuration in your
 
 ## ✨ MAIN FEATURES
 
-[AutoInstaller](https://github.com/1172005thinh/AutoInstaller) is a complete automation of fresh Windows installation, this tool provides:
+[AutoInstaller](https://github.com/quyen2867/autowindow) is a complete automation of fresh Windows installation, this tool provides:
 
 1. **A custom bootable USB drive** with [Ventoy](https://www.ventoy.net/en/index.html) supporting:
-    - A custom boot menu theme [ventoy/theme/1172005thinh](ventoy/theme/1172005thinh):
+    - A custom boot menu theme [ventoy/theme/autowindow](ventoy/theme/autowindow):
 
-        | Dark Theme Preview | Light Theme Preview |
-        | :---: | :---: |
-        | ![Dark Theme Preview](Docs/preview_dark43.png) | ![Light Theme Preview](Docs/preview_light43.png) |
+        The boot menu uses a plain dark or light background without personal links or QR codes.
 
     - A custom Ventoy configuration [ventoy/ventoy.json.example](ventoy/ventoy.json.example) with pre-defined `Menu Alias`, `Menu Tips`, `Themes`, `Menu Class`, and `Auto-select` with [unattend scripts](Unattend):
         + **Menu Alias**: Replace the default image name with a custom name.
         + **Menu Tips**: Display a short description of the image.
         + **Themes**: Apply a custom theme to the boot menu with integrated [fonts](ventoy/font/cascadia-code).
-        + **Menu Class**: To add [icons](ventoy/theme/1172005thinh/icons) to existing images.
+        + **Menu Class**: To add [icons](ventoy/theme/autowindow/icons) to existing images.
         + **Unattend scripts**: Overall, these unattend scripts provides:
             + Installing Windows hands-off
             + Bypassing Windows 11 Hardware checks (TPM 2.0, Secure Boot, RAM, CPU, etc.)
@@ -84,9 +82,8 @@ AutoInstaller/
 │   │   └── cascadia-code
 │   │       └── *.pf2                           <-- Font files for Ventoy menu
 │   ├── theme
-│   │   ├── 1172005thinh
+│   │   ├── autowindow
 │   │   │   └── ...                             <-- Theme files for Ventoy menu
-│   │   └── preview_*.png                       <-- Preview images for Ventoy menu
 │   └── ventoy.*.json.example                   <-- Ventoy configuration example
 ├── .gitignore
 ├── compile-au2exe.ps1                          <-- PowerShell script to compile AutoIt scripts to executables
@@ -188,12 +185,12 @@ Please copy your desired original Windows ISO file to the ISO partition of the U
 
 You have to download or clone this repository from GitHub by either:
 
-1. Download [this ZIP file](https://github.com/1172005thinh/AutoInstaller/archive/refs/heads/dev.zip), then extract it to a directory (not on your USB partition) on your computer.
-2. Manually download the ZIP file by navigating to [this repository](https://github.com/1172005thinh/AutoInstaller), click `Code` button, and then click `Download ZIP`, then extract it to a directory (not on your USB partition) on your computer.
+1. Download [this ZIP file](https://github.com/quyen2867/autowindow/archive/refs/heads/main.zip), then extract it to a directory (not on your USB partition) on your computer.
+2. Manually download the ZIP file by navigating to [this repository](https://github.com/quyen2867/autowindow), click `Code` button, and then click `Download ZIP`, then extract it to a directory (not on your USB partition) on your computer.
 3. For `command-line` folks, you can clone this repo by:
 
     ``` bash
-    git clone https://github.com/1172005thinh/AutoInstaller.git
+    git clone https://github.com/quyen2867/autowindow.git
     ```
 
 **4. ⚡ COPYING REPO FILES TO USB**
@@ -268,7 +265,7 @@ This repo does not ship any binary executables, all the required `setup_file` sh
     | 20 | Socials/zalo.exe | [Zalo Latest Version](https://zalo.me/download/zalo-pc?utm=90000) |
     | 21 | Antivirus/kaspersky.exe | [Kaspersky Latest Version](https://www.kaspersky.com.vn/downloads/antivirus) |
     | 22 | Utilities/FileExplorer/shell.msi | [NileSoft Shell 1.9.18](https://nilesoft.org/download/shell/1.9.18/setup-x64.msi) |
-    | 23 | Utilities/Fonts | [HungThinhCloud Shared Fonts](https://drive.hungthinhcloud.freeddns.org/share/yZzCuQ9e/Fonts/) |
+    | 23 | Utilities/Fonts | Fonts you supply |
 
     > *This is painfully slow, I know. I'm working on a solution. Please stay tuned.*
 
@@ -363,19 +360,7 @@ Please refer to [LICENSE.md](LICENSE.md) for more information.
 
 ## 🤝 CONTRIBUTION
 
-This is a `hobby project`, I am the only developer and I am still in school so I can not promise to update the tools regularly. It is my own decision to maintain or discontinue this project at any time.
-
-**Author: `1172005thinh`** <img src="https://avatars.githubusercontent.com/u/190686462?v=4" width="32" height="32" align="center" style="margin-left: 10px;" />
-
-- `Hung Thinh Nguyen` [GitHub](https://github.com/1172005thinh)
-- `Nguyễn Hưng Thịnh` [Facebook](https://www.facebook.com/quickcomp.hungthinhnguyen)
-- `HungThinhCloud` [Public Profile](https://hungthinhcloud.freeddns.org/about/)
-
-**Contributors: `AI Agents`**
-
-- `Claude - Anthropic` - Master reasoning
-- `Codex - OpenAI` - Coder
-- `Gemini - Google` - Researching and validation testing
+Maintained by [quyen2867](https://github.com/quyen2867). Report issues and propose changes in [this repository](https://github.com/quyen2867/autowindow).
 
 ---
 
@@ -385,23 +370,23 @@ This is a `hobby project`, I am the only developer and I am still in school so I
 
 | **Last Updated** | **Date** | **Description** |
 |---|---|---|
-| [*This README.md*](README.md) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=README.md&label=&style=flat) | Update [Known Issues](#known-issues) and fix typos |
-| [*Antivirus*](Antivirus/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Antivirus&label=&style=flat) | |
-| [*Browsers*](Browsers/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Browsers&label=&style=flat) | |
-| [*IDEs*](Environment/IDEs/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Environment/IDEs&label=&style=flat) | |
-| [*Java*](Environment/Java/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Environment/Java&label=&style=flat) | |
-| [*Python*](Environment/Python/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Environment/Python&label=&style=flat) | |
-| [*VCRedist*](Environment/VCRedist/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Environment/VCRedist&label=&style=flat) | |
-| [*LibreOffice*](Office/LibreOffice/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Office/LibreOffice&label=&style=flat) | |
-| [*Office2024*](Office/Office2024/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Office/Office2024&label=&style=flat) | |
-| [*Socials*](Socials/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Socials&label=&style=flat) | |
-| [*Archivers*](Tools/Archivers/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Tools/Archivers&label=&style=flat) | |
-| [*DesktopSupporters*](Tools/DesktopSupporters/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Tools/DesktopSupporters&label=&style=flat) | |
-| [*Editors*](Tools/Editors/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Tools/Editors&label=&style=flat) | |
-| [*ScreenRecorders*](Tools/ScreenRecorders/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Tools/ScreenRecorders&label=&style=flat) | |
-| [*Torrents*](Tools/Torrents/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Tools/Torrents&label=&style=flat) | Add `qBittorrent` |
-| [*FileExplorer*](Utilities/FileExplorer/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Utilities/FileExplorer&label=&style=flat) | |
-| [*Fonts*](Utilities/Fonts/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Utilities/Fonts&label=&style=flat) | |
-| [*MediaPlayers*](Utilities/MediaPlayers/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Utilities/MediaPlayers&label=&style=flat) | Add `PotPlayer`, `VLC` |
-| [*VietnameseKeyboards*](Utilities/VietnameseKeyboards/) | ![GitHub last commit](https://img.shields.io/github/last-commit/1172005thinh/AutoInstaller?path=/Utilities/VietnameseKeyboards&label=&style=flat) | |
+| [*This README.md*](README.md) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=README.md&label=&style=flat) | Update [Known Issues](#known-issues) and fix typos |
+| [*Antivirus*](Antivirus/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Antivirus&label=&style=flat) | |
+| [*Browsers*](Browsers/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Browsers&label=&style=flat) | |
+| [*IDEs*](Environment/IDEs/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Environment/IDEs&label=&style=flat) | |
+| [*Java*](Environment/Java/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Environment/Java&label=&style=flat) | |
+| [*Python*](Environment/Python/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Environment/Python&label=&style=flat) | |
+| [*VCRedist*](Environment/VCRedist/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Environment/VCRedist&label=&style=flat) | |
+| [*LibreOffice*](Office/LibreOffice/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Office/LibreOffice&label=&style=flat) | |
+| [*Office2024*](Office/Office2024/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Office/Office2024&label=&style=flat) | |
+| [*Socials*](Socials/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Socials&label=&style=flat) | |
+| [*Archivers*](Tools/Archivers/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Tools/Archivers&label=&style=flat) | |
+| [*DesktopSupporters*](Tools/DesktopSupporters/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Tools/DesktopSupporters&label=&style=flat) | |
+| [*Editors*](Tools/Editors/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Tools/Editors&label=&style=flat) | |
+| [*ScreenRecorders*](Tools/ScreenRecorders/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Tools/ScreenRecorders&label=&style=flat) | |
+| [*Torrents*](Tools/Torrents/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Tools/Torrents&label=&style=flat) | Add `qBittorrent` |
+| [*FileExplorer*](Utilities/FileExplorer/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Utilities/FileExplorer&label=&style=flat) | |
+| [*Fonts*](Utilities/Fonts/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Utilities/Fonts&label=&style=flat) | |
+| [*MediaPlayers*](Utilities/MediaPlayers/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Utilities/MediaPlayers&label=&style=flat) | Add `PotPlayer`, `VLC` |
+| [*VietnameseKeyboards*](Utilities/VietnameseKeyboards/) | ![GitHub last commit](https://img.shields.io/github/last-commit/quyen2867/autowindow?path=/Utilities/VietnameseKeyboards&label=&style=flat) | |
 

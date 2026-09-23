@@ -6,7 +6,7 @@ Currently, support:
 - **FILEEXPLORER**: Custom shell menu from `NileSoft Shell`
 - **MEDIAPLAYERS**: K-Lite Codec MPC
 - **VIETNAMESEKEYBOARDS**: Unikey by `Phạm Kim Long`
-- **FONTS**: A fonts collection directory, please download them via [HungThinhCloud Shared Fonts](https://drive.hungthinhcloud.freeddns.org/share/yZzCuQ9e/Fonts/).
+- **FONTS**: Place your own font files in `Utilities/Fonts` before deployment.
 
 ## FILEEXPLORER
 
